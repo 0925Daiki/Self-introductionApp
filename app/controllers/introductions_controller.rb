@@ -21,7 +21,7 @@ class IntroductionsController < ApplicationController
   private
 
   def introduction_params
-    params.require(:introduction).permit(:image, :nickname, :birthday, :age, :birthplace, :personality, :hobby, :skill, :music, :food, :study_abroad, :comment).merge(user_id: current_user.id)
+    params.require(:introduction).permit(:image, :name, :nickname, :birthday, :age, :birthplace, :personality, :hobby, :skill, :music, :food, :study_abroad, :comment).merge(user_id: current_user.id)
   end
 
 end

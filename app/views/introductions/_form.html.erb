@@ -6,6 +6,12 @@
   </div>
 
   <div class="field">
+    <%= f.label :name, "Name" %><br />
+    <%= current_user.name %>
+  </div>
+
+
+  <div class="field">
     <%= f.label :nickname, "Nickname" %><br />
     <%= f.text_field :nickname, id:"nickname" %>
   </div>
