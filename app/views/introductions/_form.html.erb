@@ -1,4 +1,4 @@
-<%= form_with(model: @introductions,local: true) do |f| %> 
+<%= form_with(model: @introduction,local: true) do |f| %> 
 
   <div class="field">
     <%= f.label :image, "Profile Image" %><br />
@@ -12,7 +12,7 @@
 
   <div class="field">
     <%= f.label :biathday, "Birthday" %><br />
-    <%= f.text_field :birthday, class: :form__text, id:"birthday" %>
+    <%= f.date_select :birthday, class: :form__text, id:"birthday" %>
   </div>
 
   <div class="field">
