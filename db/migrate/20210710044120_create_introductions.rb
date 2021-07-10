@@ -1,9 +1,9 @@
 class CreateIntroductions < ActiveRecord::Migration[6.0]
   def change
     create_table :introductions do |t|
-      t.references :user,      foreign_key: true
+      t.references :user,          foreign_key: true
       t.string     :nickname,      null: false
-      t.date       :birthday,        null: false
+      t.date       :birthday,      null: false
       t.string     :age,           null: false
       t.string     :birthplace,    null: false
       t.string     :personality,   null: false

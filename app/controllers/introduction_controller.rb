@@ -2,7 +2,7 @@ class IntroductionController < ApplicationController
 
   before_action :authenticate_user!, only: [:create]
   def index
-    @introductions = Introduction.all
+    @introduction = Introduction.all
   end
 
   def new
