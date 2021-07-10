@@ -70,6 +70,26 @@ a {
   background: #87CEFA;
 }
 
+.search-input{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+}
+.search-btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
 .nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;

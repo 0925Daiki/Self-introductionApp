@@ -18,10 +18,16 @@
             <%= link_to image_tag("logo.png", class: :logo), root_path %>
           </div>
           <% if user_signed_in? %> 
-            <div class="nav__right">
-              <%= link_to "Log aut", destroy_user_session_path, method: :delete, class: :nav__logout %>
-              <%= link_to "New Profile", "#", class: :nav__btn %>
-            </div>
+          <div class="nav__center">
+            <%= form_with(url: "#", local: true, method: :get, class: "search-form") do |form| %>
+              <%= form.text_field :keyword, placeholder: "Profile search", class: "search-input" %>
+              <%= form.submit "Search", class: "search-btn" %>
+            <% end %>
+          </div>
+          <div class="nav__right">
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: :nav__logout %>
+            <%= link_to "New Profile", new_introduction_path, class: :nav__btn %>
+          </div>
           <% else %> 
             <div class="nav__right">
               <%= link_to "Log in", new_user_session_path, class: :nav__btn %>

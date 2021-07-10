@@ -1,0 +1,66 @@
+<%= form_with(model: @introductions,local: true) do |f| %> 
+
+  <div class="field">
+    <%= f.label :image, "Profile Image" %><br />
+    <%= f.file_field :image, id:"profile_image" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nickname, "Nickname" %><br />
+    <%= f.text_field :nickname, id:"nickname" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :biathday, "Birthday" %><br />
+    <%= f.text_field :birthday, class: :form__text, id:"birthday" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age, "Age" %><br />
+    <%= f.text_field :age, class: :form__text, id:"age" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :birthplace, "Birthplace" %><br />
+    <%= f.text_field :birthplace, class: :form__text, id:"birthplace" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :personality, "Personality" %><br />
+    <%= f.text_field :personality, class: :form__text, id:"personality" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hobby, "Hobby" %><br />
+    <%= f.text_field :hobby, class: :form__text, id:"hobby" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :skill, "Special Skill" %><br />
+    <%= f.text_field :skill, class: :form__text, id:"skill" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :music, "Favorite Music" %><br />
+    <%= f.text_field :music, class: :form__text, id:"music" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :food, "Favorite Food" %><br />
+    <%= f.text_field :food, class: :form__text, id:"food" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :study_abroad, "Study Abroad" %><br />
+    <%= f.text_area :study_abroad, class: :form__text, id:"study_abroad" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment, "Comment" %><br />
+    <%= f.text_area :comment, class: :form__text, id:"comment" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
