@@ -1,6 +1,6 @@
 # README
 
-# DB設計
+# :computer:DB設計
 
 ## users table
 
@@ -61,3 +61,10 @@
 - belongs_to :user
 - has_many :questions
 
+# :earth_asia: 開発環境
+- VScode
+- Ruby 2.6.5
+- rails 6.0.0
+- HTML/CSS
+- Mysql2 0.4.4
+- GitHub
